@@ -414,7 +414,7 @@ export class SymmetricThreeRepresentation extends NumberRepresentation {
     toDecimal(string) {
         let result = 0n;
         for(let i = 0; i < string.length; ++i) {
-            result += BigInt(string[i]? string[i] !== 'z': '-1') * (3n) ** BigInt(string.length - i - 1);
+            result += BigInt(string[i] !== 'z'? string[i]: '-1') * (3n) ** BigInt(string.length - i - 1);
         }
 
         return result;
