@@ -1,0 +1,16 @@
+@charset "utf-8";
+@import "~bulmaswatch/darkly/variables";
+@import "~bulma/bulma";
+@import "~bulmaswatch/darkly/overrides";
+
+.tabs-content li {
+  display: none;
+  list-style: none;
+}
+
+.tabs-content li.is-active {
+  display: block;
+}
+.meme-container{
+  margin-top: 1.5em;
+}
